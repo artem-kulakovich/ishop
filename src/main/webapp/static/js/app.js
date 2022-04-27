@@ -98,5 +98,24 @@ try {
 
 }
 
+try {
+    const userName = document.getElementById("username");
+    userName.addEventListener("change", () => {
+        if(userName.value.length < 2){
+            alert("Имя аккаунта должно быть больше 2 символов");
+        }
+    });
+} catch
+    (e) {
+}
 
-
+try {
+    const password = document.getElementById("password");
+    password.addEventListener("change", () => {
+        if(password.value.length < 4){
+            alert("Пароль должен быть больше 4 символов");
+        }
+    });
+} catch
+    (e) {
+}

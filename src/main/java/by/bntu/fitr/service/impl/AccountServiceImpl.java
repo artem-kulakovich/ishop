@@ -11,6 +11,7 @@ import by.bntu.fitr.service.AccountService;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Objects;
 import java.util.Properties;
 
 public class AccountServiceImpl implements AccountService {
@@ -32,6 +33,7 @@ public class AccountServiceImpl implements AccountService {
             throw new InternalServerErrorException("Can't execute SQL request: " + e.getMessage(), e);
         }
     }
+    
 
     @Override
     public Account getAccountByUserName(String userName) {

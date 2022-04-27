@@ -23,11 +23,11 @@
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="firstName">Имя</label>
-                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="" value="">
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Имя должно быть больше одного символа" value="">
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="lastName">Фамилия</label>
-                        <input type="text" class="form-control" id="lastName" name="lastname" placeholder="" value="">
+                        <input type="text" class="form-control" id="lastName" name="lastname" placeholder="Фамилия должна быть больше одного символа" value="">
                     </div>
                 </div>
                 <div class="mb-3">
@@ -36,19 +36,19 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">@</span>
                         </div>
-                        <input type="text" class="form-control" id="username" name="userName" placeholder="Username">
+                        <input type="text" class="form-control" id="username" name="userName" placeholder="Имя аккаунта должно быть больше 4 символов">
                     </div>
                 </div>
 
                 <div class="mb-3">
                     <label for="password">Пароль</label>
                     <input type="password" id="password" name="password" class="form-control"
-                           placeholder="Password" required="">
+                           placeholder="Пароль должен быть больше 4 символов" required="">
                 </div>
 
                 <div class="mb-3">
-                    <label for="email">Email <span class="text-muted">(Optional)</span></label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com">
+                    <label for="email">Email <span class="text-muted"></span></label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email должен быть больше 7 символов">
                 </div>
 
                 <div style="display: block" id="sendEmailDiv">

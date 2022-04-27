@@ -16,6 +16,4 @@ public class DeleteReviewController extends AbstractController {
         response.sendRedirect("/product/reviews?productId=" + productId);
 
     }
-
-
 }

@@ -80,7 +80,7 @@ try {
         if (checkingDataEntry()) {
             xhttp.send(parameters);
         } else {
-            alert("Заполните пожалуйста форму");
+            alert("Заполните пожалуйста форму правильно");
             sendEmailBtn.disabled = false;
         }
     });
@@ -199,8 +199,36 @@ try {
         }
     });
 } catch (e) {
-
 }
+
+try {
+    const userName = document.getElementById("username");
+    userName.addEventListener("change", () => {
+
+        xhttp.open("POST", "/ajax/check-duplicate-users");
+        xhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+        const str = "userName=" + userName.value;
+
+        xhttp.onreadystatechange = function () {
+            if (this.readyState === 4 && this.status === 200) {
+                console.log(xhttp.responseText);
+                if (xhttp.responseText == 1) {
+                    alert("Такое имя аккаунта уже существует");
+                    location = "http://localhost:8080/registration";
+                }
+            }
+        }
+        xhttp.send(str);
+
+    });
+} catch
+    (e) {
+}
+
+
+
+
 
 try {
     let orderBtns = document.getElementsByName("orderBtn");

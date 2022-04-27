@@ -15,6 +15,7 @@
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
+<c:import url="/WEB-INF/jsp/fragment/header.jsp"></c:import>
 <div class="container-fluid">
     <c:forEach var="message" items="${requestScope.messageList}">
         <div class="row border">
@@ -31,6 +32,7 @@
         </div>
     </c:forEach>
 </div>
+
 <script src="../../../../static/js/ajax.js"></script>
 <script src="../../../../static/js/app.js"></script>
 </body>

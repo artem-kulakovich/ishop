@@ -16,7 +16,7 @@
 </head>
 <body>
 
-
+<c:import url="/WEB-INF/jsp/fragment/header.jsp"></c:import>
 <div class="container-fluid">
     <div class="row bg-light">
         <div class="col-2 text-center mt-2">

@@ -62,7 +62,7 @@ public class JDBCUtils {
     /*
 
     private static void setParameters(PreparedStatement preparedStatement, Object... parameters) throws SQLException {
-        if (parameters != null) {
+        if (parameters != null) { 
             if (parameters.length > 0 && parameters[0] instanceof List<?>) {
                 setParametersFromList(preparedStatement, (List<?>) parameters[0]);
             } else {

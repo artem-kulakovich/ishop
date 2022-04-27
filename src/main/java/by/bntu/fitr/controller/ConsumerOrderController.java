@@ -22,6 +22,4 @@ public class ConsumerOrderController extends AbstractController {
         request.setAttribute("url","/WEB-INF/jsp/fragment/order-list.jsp");
         forwardToPage(request,response,"account.jsp");
     }
-
-
 }

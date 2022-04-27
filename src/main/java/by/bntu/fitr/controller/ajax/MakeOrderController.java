@@ -1,13 +1,11 @@
 package by.bntu.fitr.controller.ajax;
 
-import by.bntu.fitr.constants.Constants;
 import by.bntu.fitr.entity.Account;
 import by.bntu.fitr.model.MailSender;
 import by.bntu.fitr.model.OrderHandler;
 import by.bntu.fitr.model.ShoppingCart;
 import by.bntu.fitr.util.SessionUtils;
 
-import javax.mail.MessagingException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -34,8 +32,5 @@ public class MakeOrderController extends AbstractAjaxController {
             printWriter.write("error");
             e.printStackTrace();
         }
-
     }
-
-
 }

@@ -12,6 +12,7 @@
     <title>Title</title>
 </head>
 <body>
+
 <div class="col-8">
     <div class="row mt-5">
         <c:forEach var="product" items="${requestScope.productList}">

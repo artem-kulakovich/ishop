@@ -9,8 +9,8 @@ import java.util.Properties;
 
 public class MailSender {
     private Properties properties = new Properties();
-    private String username = "artemka228-1@mail.ru";
-    private String password = "erdfcv$3";
+    private String username = "artemkulakovich237";
+    private String password = "artem201320133";
     private String uniqueCode;
 
 

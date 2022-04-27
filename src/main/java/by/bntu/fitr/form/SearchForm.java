@@ -1,7 +1,5 @@
 package by.bntu.fitr.form;
 
-import javax.servlet.http.HttpServletRequest;
-import java.awt.image.AreaAveragingScaleFilter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
